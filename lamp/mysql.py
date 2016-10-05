@@ -9,4 +9,5 @@ os.system("sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/
 # Start MySQL and set it to run at boot
 os.system("sudo systemctl start mysqld.service; sudo systemctl enable mysqld.service")
 
+# Configure mysql
 os.system("mysql_secure_installation")
