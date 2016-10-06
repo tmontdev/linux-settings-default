@@ -23,7 +23,7 @@ with open(httpdconf, 'w') as file:
     file.write(httpdfile)
 
 #Copy default vhosts
-os.system('sudo cp vhost-default.txt /etc/httpd/conf/extra/httpd-vhosts.conf')
+os.system('sudo cp apache/vhost-default.txt /etc/httpd/conf/extra/httpd-vhosts.conf')
 
 #Create folders and add -R 777 permission
 os.system('sudo mkdir -p /srv/http/localhost; sudo mkdir -p /srv/http/localhost/logs')
