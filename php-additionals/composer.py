@@ -11,4 +11,4 @@ home = input('Your username linux (example: omarkdev): ')
 composer_path = '\nPATH=~/.config/composer/vendor/bin:$PATH'
 
 with open("/home/"+home+"/.zshrc", "a") as myfile:
-    myfile.write(composerpath)
+    myfile.write(composer_path)
