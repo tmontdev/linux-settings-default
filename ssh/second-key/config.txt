@@ -1,0 +1,7 @@
+Host bitbucket.org
+  Hostname bitbucket.org
+  IdentityFile ~/.ssh/id_rsa
+
+Host bitbucket-second
+  Hostname bitbucket.org
+  IdentityFile ~/.ssh/id_rsa_second
