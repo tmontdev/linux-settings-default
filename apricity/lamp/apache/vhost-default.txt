@@ -1,0 +1,12 @@
+<VirtualHost *:80> 
+     ServerAdmin webmaster@example.com
+     ServerName localhost
+     ServerAlias app.localhost
+     DocumentRoot /srv/http/localhost/
+     ErrorLog /srv/http/localhost/logs/error.log
+     CustomLog /srv/http/localhost/logs/access.log combined
+    <Directory />
+        Order deny,allow
+        Allow from all
+    </Directory>
+</VirtualHost>
