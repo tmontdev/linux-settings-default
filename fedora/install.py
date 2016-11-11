@@ -6,6 +6,8 @@ os.system("sudo systemctl start mariadb")
 
 os.system("sudo mysql_secure_installation")
 
+os.system("sudo npm i -g stylus gulp-cli")
+
 os.system("curl -L git.io/sublimetext | sh")
 
 os.system("curl -L http://install.ohmyz.sh | sh")
