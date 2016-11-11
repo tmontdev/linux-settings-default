@@ -18,7 +18,14 @@ def packageControl():
 def settingsSublime():
 	file = "Preferences.sublime-settings"
 
-	return curl(file)
+	curl(file)
+
+	os.system("curl -LOk https://github.com/mrmartineau/SetiUI-Icons-Sublime/archive/master.zip ; unzip master.zip")
+
+	movePath = "%sMaterial-Theme-Darker/" % (path)
+
+	os.system("mv SetiUI-Icons-Sublime-master/ "+ movePath)
+	os.system("rm master.zip")
 
 def menu():
 	print """If you already have the 
